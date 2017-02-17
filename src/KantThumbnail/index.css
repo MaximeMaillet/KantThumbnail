@@ -1,0 +1,116 @@
+/**
+* @template kant/thumbnail
+* @author Maxime Maillet <maxime.maillet93@gmail.com>
+*/
+body {
+		background-color: #9CCC65;
+}
+
+@font-face {
+	font-family: 'KantThumbnailRoboto';
+    font-weight: normal;
+	font-style: normal;
+	src: url('Roboto-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'KantThumbnailNextFont';
+    font-weight: normal;
+	font-style: normal;
+	src: url('TheNextFont.ttf');
+}
+
+article.KantThumbnail {
+	border: 1px solid #212121;
+	background-color: rgba(255,255,255,0.8);
+	padding: 0px;
+	margin: 10px 1% 0 2%;
+	min-width: 20%;
+	max-width: 28%;
+	min-height: 30%;
+	float: left;
+	padding: 5px;
+	font-family: 'KantThumbnailRoboto', serif;
+}
+
+article.KantThumbnail div.header {
+	background-color: #3F51B5;
+	padding: 20px 5px 5px 5px;
+	position: relative;
+	color: #C5CAE9;
+	min-height: 14%;
+	font-size: 15px;
+}
+
+article.KantThumbnail div.header:before {
+	content: '';
+	height: 15px;
+	background-color: #303F9F;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	left: 0px;
+}
+
+article.KantThumbnail div.header .title {
+	font-family: 'KantThumbnailNextFont', serif;
+	color: #FFFFFF;
+	margin: 0px;
+	font-size: 28px;
+	text-align: center;
+}
+
+article.KantThumbnail div.header .subtitle {
+	font-family: 'KantThumbnailNextFont', serif;
+	margin: 0px 0px 5px 0px;
+	font-size: 15px;
+	text-align: center;
+}
+
+article.KantThumbnail div.header div.picture {
+	width: 90px;
+	height: 90px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 50px;
+	margin: 5px;
+	box-shadow: 1px 1px 5px #212121;
+	float: left;
+}
+
+article.KantThumbnail div.header div.data {
+	margin: 10px 0 0 100px;
+}
+
+article.KantThumbnail div.header div.data p {
+	font-style: italic;
+	text-align: center;
+	font-size: 13px;
+}
+
+article.KantThumbnail div.body {
+	padding: 5px;
+	background-color: #FFFFFF;
+	min-height: 20%;
+	font-size: 15px;
+}
+
+article.KantThumbnail div.footer {
+	font-size: 12px;
+	padding: 5px;
+	background-color: #C5CAE9;
+	min-height: 2%;
+	margin-top: 3px;
+	text-align: center;
+}
+
+article.KantThumbnail div.footer a {
+	display: inline-block;
+	text-decoration: none;
+	color: #303F9F;
+	margin: 0 3% 0 3%;
+}
+
+article.KantThumbnail div.footer a:hover {
+	color: #FFFFFF;
+}

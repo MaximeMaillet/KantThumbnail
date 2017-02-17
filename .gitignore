@@ -1,0 +1,7 @@
+vendor/
+public/
+app/
+composer.lock
+index.php
+route.json
+.htaccess
