@@ -2,10 +2,6 @@
 * @template kant/thumbnail
 * @author Maxime Maillet <maxime.maillet93@gmail.com>
 */
-body {
-		background-color: #9CCC65;
-}
-
 @font-face {
 	font-family: 'KantThumbnailRoboto';
     font-weight: normal;
