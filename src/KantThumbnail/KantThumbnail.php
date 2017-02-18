@@ -20,7 +20,7 @@ class KantThumbnail extends IKant
 			self::$instance = new KantThumbnail();
 		return self::$instance;
 	}
-
+	
 	public static function generate($data) {
 		$example = file_get_contents(__DIR__.'/example.html');
 
@@ -45,7 +45,11 @@ class KantThumbnail extends IKant
 		echo $example;
 	}
 
-	public function get() {
+	public function css() {
 		return [__DIR__.'/index.css'];
+	}
+
+	public function js() {
+		return [__DIR__.'/index.js'];
 	}
 }
