@@ -4,16 +4,23 @@
 */
 @font-face {
 	font-family: 'KantThumbnailRoboto';
-    font-weight: normal;
+	font-weight: normal;
 	font-style: normal;
-	src: url('Roboto-Regular.ttf');
+	src: url('{PUBLIC}/Roboto-Regular.ttf');
 }
 
 @font-face {
 	font-family: 'KantThumbnailNextFont';
-    font-weight: normal;
+	font-weight: normal;
 	font-style: normal;
-	src: url('TheNextFont.ttf');
+	src: url('{PUBLIC}/TheNextFont.ttf');
+}
+
+@font-face {
+	font-family: 'bluehighway';
+	font-weight: normal;
+	font-style: normal;
+	src: url('{PUBLIC}/bluehighway.ttf');
 }
 
 article.KantThumbnail {
@@ -23,7 +30,6 @@ article.KantThumbnail {
 	margin: 10px 1% 0 2%;
 	min-width: 20%;
 	max-width: 28%;
-	min-height: 30%;
 	float: left;
 	padding: 5px;
 	font-family: 'KantThumbnailRoboto', serif;
@@ -34,7 +40,7 @@ article.KantThumbnail div.header {
 	padding: 20px 5px 5px 5px;
 	position: relative;
 	color: #C5CAE9;
-	min-height: 14%;
+	min-height: 130px;
 	font-size: 15px;
 }
 
@@ -64,10 +70,10 @@ article.KantThumbnail div.header .subtitle {
 }
 
 article.KantThumbnail div.header div.picture {
+	background-repeat: no-repeat;
+	background-size: cover;
 	width: 90px;
 	height: 90px;
-	background-size: cover;
-	background-repeat: no-repeat;
 	border-radius: 50px;
 	margin: 5px;
 	box-shadow: 1px 1px 5px #212121;
@@ -85,10 +91,12 @@ article.KantThumbnail div.header div.data p {
 }
 
 article.KantThumbnail div.body {
-	padding: 5px;
+	padding: 10px 5px 5px 5px;
 	background-color: #FFFFFF;
-	min-height: 20%;
+	min-height: 150px;
 	font-size: 15px;
+	font-family: "bluehighway", serif;
+	text-align: center;
 }
 
 article.KantThumbnail div.footer {

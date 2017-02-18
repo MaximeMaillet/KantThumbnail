@@ -55,6 +55,6 @@ class KantThumbnail extends IKant
 
 	public function media()
 	{
-		// TODO: Implement media() method.
+		return [];
 	}
 }
