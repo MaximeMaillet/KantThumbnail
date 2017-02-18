@@ -24,14 +24,25 @@ class KantThumbnail extends IKant
 	public static function generate($data) {
 		$example = file_get_contents(__DIR__.'/example.html');
 
-		if(self::$instance === null)
-			return $example;
+		if(self::$instance === null && count($data) == 0) {
+			echo $example;
+			return;
+		}
 
-		foreach(self::$instance->data() as $key => $value) {
+		self::Kanter();
+
+		if(count($data) > 0) {
+			$array_data = $data;
+		}
+		else {
+			$array_data = self::$instance->data();
+		}
+
+		foreach($array_data as $key => $value) {
 			$example = str_replace('{'.strtoupper($key).'}', $value, $example);
 		}
 
-		return $example;
+		echo $example;
 	}
 
 	public function get() {
